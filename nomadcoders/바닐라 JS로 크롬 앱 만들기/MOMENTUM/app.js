@@ -8,8 +8,8 @@ function onLoginSubmit(event){
     event.preventDefault();
     loginForm.classList.add(HIDDEN_CLASSNAME);
     const username = loginInput.value;
+    localStorage.setItem("username", username);
     greeting.innerText = `Hello ${username}`;
-    // greeting.innerText = "Hello " + username; 이거랑 같은 역할을 해준다.
     greeting.classList.remove(HIDDEN_CLASSNAME);
 }
 
