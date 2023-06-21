@@ -4,10 +4,10 @@ const toDoList = document.getElementById("todo-list");
 
 const TODOS_KEY = "todos";
 
-const toDo = [];
+let toDos = [];
 
 function saveToDos() {
-    localStorage.setItem(TODOS_KEY, JSON.stringify(toDo));
+    localStorage.setItem(TODOS_KEY, JSON.stringify(toDos));
     /*  
         localStorage에는 배열이 저장되지 않고 텍스트만 저장되기 때문에 
         JSON.stringify를 이용해 객체, 배열을 문자열로 바꿔준다.
@@ -35,7 +35,7 @@ function handleToDoSubmit(event) {
     event.preventDefault();
     const newTodo = toDoInput.value;
     toDoInput.value = "";
-    toDo.push(newTodo);
+    toDos.push(newTodo);
     paintToDo(newTodo);
     saveToDos(newTodo);
 }
@@ -51,7 +51,8 @@ const savedToDos = localStorage.getItem(TODOS_KEY);
 
 if (savedToDos !== null) {
     const parseToDos = JSON.parse(savedToDos);
-    parseToDos.forEach((item) => console.log("this is the turn of", item));
+    toDos = parseToDos;
+    parseToDos.forEach(paintToDo);
     /*
     parsedToDos.forEach();  //  parsedToDos에는 array에 있는 각각의 item에 대해 
     function을 한 개만 실행해줄 수 있는 forEach()가 있다.
