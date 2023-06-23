@@ -17,7 +17,9 @@ function saveToDos() {
 function deleteToDo(event) {
     const li = event.target.parentElement;
     li.remove();
-}
+    toDos = toDos.filter((toDo) => toDo.id !== parseInt(li.id));
+    saveToDos();
+  }
 
 function paintToDo(newTodo) {
     const li = document.createElement("li");
@@ -50,9 +52,10 @@ function sayHello(item) {   // 실행되고 있는 item에 대한 정보도 알 
 const savedToDos = localStorage.getItem(TODOS_KEY);
 
 if (savedToDos !== null) {
-    const parseToDos = JSON.parse(savedToDos);
-    toDos = parseToDos;
-    parseToDos.forEach(paintToDo);
+    const parsedToDos = JSON.parse(savedToDos);
+    toDos = parsedToDos;
+    parsedToDos.forEach(paintToDo);
+
     /*
     parsedToDos.forEach();  //  parsedToDos에는 array에 있는 각각의 item에 대해 
     function을 한 개만 실행해줄 수 있는 forEach()가 있다.
