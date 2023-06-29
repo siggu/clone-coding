@@ -7,35 +7,60 @@
     <title>Home - My first website.</title>
     <link href="style.css" rel="stylesheet" />
     <style>
+        * {
+            border: 1px dashed black;
+        }
+
         html {
             background-color: tomato;
         }
 
         body {
-            margin: 10px 3px 20px;
-            /* 
-            margin: a b c d === 
-            margin-top:a; 상
-            margin-top:b; 하
-            margin-top;c; 좌
-            margin-top;d; 우
-
-            만약 margin: a, b; 라고 한다면
-            상하: a, 좌우: b
-            */
+            margin: 20px;
+            padding: 20px;
             background-color: thistle;
         }
 
         div {
-            height: 150px;
+            padding: 20px;
+        }
+
+        #first {
+            background-color: whitesmoke;
             width: 150px;
-            background-color: white;
+            height: 150px;
+        }
+
+        #second {
+            background-color: teal;
+            width: 100px;
+            height: 100px;
+        }
+
+        #thrid {
+            background-color: wheat;
+            width: 50px;
+            height: 50px;
+        }
+
+        #fourth {
+            background-color: blanchedalmond;
+            width: 25px;
+            height: 25px;
         }
     </style>
 </head>
 
 <body>
-    <div></div>
+    <div id="first">
+        <div id="second">
+            <div id="third">
+                <div id="fourth">
+                    <span>hello</span>
+                </div>
+            </div>
+        </div>
+    </div>
 </body>
 
 </html>
