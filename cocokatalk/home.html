@@ -13,27 +13,36 @@
 
         }
 
-        div {
-            width: 300px;
-            height: 300px;
-            background-color: wheat;
-            position: relative;
+        span {
+            background-color: yellowgreen;
+            padding: 5px;
+            border-radius: 10px;
         }
 
-        .green {
-            background-color: teal;
-            height: 100px;
-            width: 100px;
-            position: absolute;
-            right: 0px;
-            bottom: 0px;
+        p span {
+            color: white;
         }
+
+        p+span {
+            text-decoration: underline;
+        }
+
+        /*
+        p span: p의 모든 span 자식에게 적용하갰다.
+        p > span: p 바로 밑에 있는 span 자식에게 적용하겠다.
+        p + span: p 바로 밑에 있는 span 형제에게 적용하겠다.
+        */
     </style>
 </head>
 
 <body>
     <div>
-        <div class="green"></div>
+        <p>
+            Lorem ipsum dolor sit, amet consectetur adipisicing elit. Iste natus nesciunt dolor libero consequatur ab at
+            iusto incidunt molestiae! Adipisci similique veniam dolore quia aspernatur exercitationem voluptatibus qui
+            at quibusdam. <span>inside</span>
+        </p>
+        <span>hello</span>
     </div>
 </body>
 
