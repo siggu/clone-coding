@@ -19,30 +19,32 @@
             border-radius: 10px;
         }
 
-        p span {
-            color: white;
+        input {
+            border: 1px solid wheat;
         }
 
-        p+span {
-            text-decoration: underline;
+        input:required {
+            border-color: tomato;
+        }
+
+        input[placeholder~="name"] {
+            background-color: pink;
         }
 
         /*
-        p span: p의 모든 span 자식에게 적용하갰다.
-        p > span: p 바로 밑에 있는 span 자식에게 적용하겠다.
-        p + span: p 바로 밑에 있는 span 형제에게 적용하겠다.
+            *="name": ㅁㄴㅇㄹnameㅁㄴㅇㄹ 라고 해주어도 선택된다.
+            ~="name": 앞 뒤에 공백이 있는 상태에서 name 만 있는 경우 선택된다.
         */
     </style>
 </head>
 
 <body>
     <div>
-        <p>
-            Lorem ipsum dolor sit, amet consectetur adipisicing elit. Iste natus nesciunt dolor libero consequatur ab at
-            iusto incidunt molestiae! Adipisci similique veniam dolore quia aspernatur exercitationem voluptatibus qui
-            at quibusdam. <span>inside</span>
-        </p>
-        <span>hello</span>
+        <form>
+            <input type="text" placeholder="First name" />
+            <input type="text" placeholder="Last name" />
+            <input type="password" required placeholder="password" />
+        </form>
     </div>
 </body>
 
