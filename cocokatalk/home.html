@@ -19,31 +19,52 @@
             border-radius: 10px;
         }
 
-        input {
-            border: 1px solid wheat;
-        }
-
-        input:required {
-            border-color: tomato;
-        }
-
         input[placeholder~="name"] {
             background-color: pink;
         }
 
-        /*
-            *="name": ㅁㄴㅇㄹnameㅁㄴㅇㄹ 라고 해주어도 선택된다.
-            ~="name": 앞 뒤에 공백이 있는 상태에서 name 만 있는 경우 선택된다.
-        */
+        form {
+            border: 1px solid salmon;
+            display: flex;
+            flex-direction: column;
+            padding: 20px;
+        }
+
+        button:active {
+            /*active: 해당 요소를 마우스로 클릭했을 때*/
+            background-color: tomato;
+        }
+
+        a:hover {
+            /*hover: 해당 요소를 마우스가 지나갈 때*/
+            background-color: teal;
+        }
+
+        a:visited {
+            /*visited: 방문한 사이트일 때*/
+            color: aqua;
+        }
+
+        form:focus-within {
+            /*form의 자식 중 에 focus된 자식이 있을 때*/
+            border-color: seagreen;
+        }
+
+        form:hover input:focus {
+            /*form이 hover 되고, input이 focus되었을 때 적용시킴*/
+            background-color: sienna;
+        }
     </style>
 </head>
 
 <body>
     <div>
+        <button>Button</button>
+        <a href="https://apple.com">Go to apple</a>
         <form>
-            <input type="text" placeholder="First name" />
-            <input type="text" placeholder="Last name" />
-            <input type="password" required placeholder="password" />
+            <input type="text" name="" id="">
+            <input type="text" name="" id="">
+            <input type="text" name="" id="">
         </form>
     </div>
 </body>
