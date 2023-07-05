@@ -7,42 +7,35 @@
     <title>Home - My first website.</title>
     <link href="style.css" rel="stylesheet" />
     <style>
+        :root {
+            /*custom property*/
+            --main-color: #59499e;
+            --default-border: 1px solid var(--main-color);
+        }
+
         body {
             height: 1000vh;
             margin: 50px;
-
         }
 
-        span {
-            background-color: yellowgreen;
-            padding: 5px;
-            border-radius: 10px;
+        p {
+            background-color: var(--main-color);
         }
 
-        input::placeholder {
-            /*placeholder만 변경하고 싶을 때*/
-            color: yellowgreen;
-        }
-
-        p::selection {
-            /*문자를 드래그 했을 때*/
-            background-color: yellowgreen;
-        }
-
-        p::first-letter {
-            /*첫 번째 문자만*/
-            font-size: 100px;
+        a {
+            color: var(--main-color);
+            border: var(--default-border);
         }
     </style>
 </head>
 
 <body>
-    <form>
-        <input type="text" placeholder="name">
-    </form>
-    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Amet neque dicta saepe alias cupiditate architecto
-        similique obcaecati aliquid soluta pariatur. Vitae culpa possimus consectetur incidunt itaque ipsa doloribus
-        numquam quis.</p>
+    <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Beatae at maiores, delectus facere recusandae minus
+        dolore officia, odio consequatur quaerat a provident minima esse modi ipsum nemo rem laborum dolorem.</p>
+
+    <div>
+        <a href="#">website</a>
+    </div>
 </body>
 
 </html>
