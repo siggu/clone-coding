@@ -7,35 +7,21 @@
     <title>Home - My first website.</title>
     <link href="style.css" rel="stylesheet" />
     <style>
-        a {
-            color: wheat;
-            background-color: tomato;
-            text-decoration: none;
-            padding: 3px 5px;
-            border-radius: 5px;
-            font-size: 55px;
-            transition: all 1s ease-in-out;
-            /*
-            linear: 직선 그래프
-            ease-in: 시작과 끝이 빠름
-            ease-out: 시작과 끝이 느림
-            ease-in-out: 시작이 빠르고 끝이 느림
-            all: state에 있는 모든 상태를 한 번에 다룸
-            ','를 통해 state에 있는 상태를 하나씩 다룰 수 있음
-            transition은 state가 없는 곳에서 써야 함
-            */
+        img {
+            border: 5px solid black;
+            border-radius: 3%;
+            transition: all 2s ease-in-out;
         }
 
-        a:hover {
-            border-radius: 30px;
-            color: tomato;
-            background-color: wheat;
+        img:hover {
+            transform: rotateZ(360deg) scale(0.5)
         }
     </style>
 </head>
 
 <body>
-    <a href="#">Go home</a>
+    <img src="img/logo.png" />
+    <span>asdf</span>
 </body>
 
 </html>
