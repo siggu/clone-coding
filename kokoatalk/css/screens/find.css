@@ -9,26 +9,6 @@
     top: 30px;
 }
 
-.find-icons {
-    display: flex;
-    justify-content: space-between;
-    padding-bottom: 25px;
-}
-
-.find-icons__icon {
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-}
-
-.find-icons__icon i {
-    font-size: 30px;
-}
-
-.find-icons__icon span {
-    margin-top: 20px;
-}
-
 .recommended-friends {
     margin: 25px 0px;
     padding: 25px 0px;
