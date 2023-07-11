@@ -1,6 +1,6 @@
 #chat-screen {
     background-color: #abc1d1;
-    height: 11000vh;
+    height: 500vh;
 }
 
 #chat-screen .status-bar,
@@ -19,12 +19,24 @@
     z-index: 1;
 }
 
+@keyframes fadeIn {
+    from {
+        transform: translateY(20px);
+        opacity: 0;
+    }
+    to {
+        transform: none;
+        opacity: 1;
+    }
+}
+
 .main-chat {
     margin-top: 90px;
     display: flex;
     flex-direction: column;
     align-items: center;
     font-size: 14px;
+    animation: fadeIn 0.5s linear;
 }
 
 .chat__timestamp {
@@ -35,10 +47,20 @@
     margin-bottom: 25px;
 }
 
+@keyframes messageLeft {
+    from {
+        transform: translateX(-30px);
+    }
+    to {
+        transform: none;
+    }
+}
+
 .message-row {
     display: flex;
     width: 100%;
     margin-bottom: 25px;
+    animation: messageLeft 1s linear;
 }
 .message-row img {
     width: 50px;
@@ -72,8 +94,18 @@
     font-size: 13px;
 }
 
+@keyframes messageRight {
+    from {
+        transform: translateX(30px);
+    }
+    to {
+        transform: none;
+    }
+}
+
 .message-row--own {
     justify-content: flex-end;
+    animation: messageRight 1s linear;
 }
 
 .message-row--own .message__bubble {
@@ -119,6 +151,7 @@
     width: 100%;
     border: var(--main-border);
     border-radius: 20px;
+    transition: all 0.3s ease-in-out;
 }
 
 .reply__column:last-child > i,
