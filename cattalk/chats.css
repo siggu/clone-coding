@@ -1,0 +1,7 @@
+.chat-screen .user-component {
+    border-bottom: none;
+}
+
+.chat-screen {
+    padding: 5px;
+}

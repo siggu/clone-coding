@@ -1,4 +1,8 @@
 @import 'reset.css';
+@import 'nav-bar.css';
 @import 'login.css';
 @import 'friends.css';
 @import 'variables.css';
+@import 'chats.css';
+@import 'user-component.css';
+@import 'openchat.css';

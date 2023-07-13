@@ -18,6 +18,7 @@
 .welcome-header__title {
     padding-top: 20vh;
     font-weight: 400;
+    padding-bottom: 10vh;
 }
 
 .welcome-header__text {
