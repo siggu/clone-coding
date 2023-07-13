@@ -18,12 +18,16 @@
 }
 
 .user-component {
-    display: flex;
     justify-content: space-between;
-    align-items: center;
     padding: 15px 0px;
     border-bottom: 1px solid;
     border-color: var(--gray);
+}
+
+.user-component,
+.user-component__column:first-child {
+    display: flex;
+    align-items: center;
 }
 
 .user-component__right {
@@ -34,34 +38,110 @@
     color: rgba(0, 0, 0, 0.6);
 }
 
-.user-component__text {
-    padding-left: 10px;
+.user-component__right-gift {
+    border: 1px solid;
+    border-radius: 20px;
+    padding: 5px 7px;
+    font-size: 14px;
+    border-color: pink;
+    color: rgba(0, 0, 0, 0.5);
 }
 
-.user-component__column:first-child {
-    display: flex;
-    align-items: center;
+.user-component__subtext {
+    margin-top: 5px;
+    font-size: 11px;
+    color: rgba(0, 0, 0, 0.5);
 }
 
 .img-lg {
     width: 60px;
     height: 60px;
     border-radius: 20px;
+    margin-right: 10px;
 }
 
 .img-sm {
     width: 45px;
     height: 45px;
-    border: 1px solid;
     border-radius: 18px;
+    margin-right: 10px;
 }
 
-.friends-screen__multi-profile .friends-screen__multi-profile-header {
+.img-sm-border {
+    width: 45px;
+    height: 45px;
+    border-radius: 18px;
+    border: 1px solid rgba(0, 0, 0, 0.3);
+    margin-right: 10px;
+}
+.friends-screen__multi-profile .friends-screen__multi-profile-header,
+.friends-screen__birthday .friends-screen__birthday-header,
+.friends-screen__update .friends-screen__update-header,
+.friends-screen__friend .friends-screen__friend-header {
     display: flex;
     justify-content: space-between;
-    padding-bottom: 15px;
     color: rgba(0, 0, 0, 0.5);
+    margin-bottom: 5px;
 }
-.friends-screen__multi-profile {
-    padding: 15px 0px;
+.friends-screen__multi-profile,
+.friends-screen__birthday,
+.friends-screen__update,
+.friends-screen__recommend,
+.friends-screen__friend {
+    padding: 10px 0px;
+}
+
+.fa-hand-holding-heart {
+    color: pink;
+    margin-left: 5px;
+}
+
+.friends-screen__update__name {
+    display: flex;
+    flex-direction: column;
+}
+
+.icon-row {
+    display: flex;
+    justify-content: flex-start;
+    align-items: center;
+    text-align: center;
+    margin-top: 15px;
+    padding-bottom: 15px;
+}
+
+.icon-row__icon {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+.icon-row__icon span {
+    padding: 0px 10px;
+}
+
+.icon-row__icon img {
+    margin: 0px;
+}
+
+.icon-row {
+    border-bottom: 1px solid var(--gray);
+}
+
+.user-component__music {
+    border: 1px solid rgb(105, 248, 105);
+    border-radius: 15px;
+    font-size: 13px;
+    padding: 3px 8px;
+    align-items: center;
+    text-align: center;
+    color: rgba(0, 0, 0, 0.7);
+}
+.fa-caret-right {
+    color: rgb(105, 248, 105);
+    padding-left: 5px;
+}
+
+.friends-screen__friend .user-component {
+    border-bottom: none;
+    padding-bottom: 5px;
 }
