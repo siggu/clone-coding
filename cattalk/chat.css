@@ -1,0 +1,60 @@
+.chat-background {
+    background-color: #abc1d1;
+}
+
+.img-sx {
+    width: 40px;
+    height: 40px;
+    border-radius: 15px;
+    margin-right: 10px;
+}
+
+.chat__friend__name {
+    font-size: 13px;
+    margin-top: 15px;
+    padding-bottom: 10px;
+    margin-bottom: 7px;
+}
+
+.chat__friend__title {
+    border: 1px solid none;
+    border-radius: 13px;
+    padding: 8px 11px;
+    border-top-left-radius: 0px;
+    background-color: white;
+    margin-bottom: 5px;
+    width: auto;
+}
+
+.chat__friend__time {
+    position: absolute;
+    padding-top: 15px;
+    margin-left: 5px;
+    font-size: 11px;
+    width: 100%;
+    color: rgba(0, 0, 0, 0.5);
+}
+
+.user-component__name {
+    display: flex;
+    flex-direction: column;
+}
+
+.chat__friend__send {
+    justify-content: flex-end;
+    right: 0;
+    padding: 10px;
+    margin-top: 25px;
+    margin-right: 10px;
+    border-radius: 13px;
+    border-top-right-radius: 0px;
+    background-color: yellow;
+}
+
+.chat__friend__send__time {
+    right: 100px;
+}
+
+.chat__friend__send .chat__friend__time {
+    flex-direction: row-reverse;
+}

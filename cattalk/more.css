@@ -1,0 +1,37 @@
+.more-screen__wallet {
+    background-color: var(--gray);
+    margin-bottom: 10px;
+}
+
+.more-screen .user-component {
+    border-bottom: none;
+}
+
+.more-screen__column {
+    padding: 10px 20px;
+}
+
+.user-component__text {
+    font-size: 17px;
+}
+
+.more-screen__column .try {
+    display: flex;
+    align-items: center;
+    background: tomato;
+    border-radius: 5px;
+    width: 93%;
+    height: 5px;
+    font-size: 13px;
+    margin: 0px auto;
+    margin-bottom: 15px;
+    padding: 15px;
+}
+
+.fa-money-bill-alt {
+    padding-right: 10px;
+}
+
+.more-screen__list {
+    padding: 10px;
+}
