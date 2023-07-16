@@ -9,11 +9,14 @@
     <script type="text/babel">
         const root = document.getElementById('root');
         function App() {
-            // React.useState()는 배열을 주는데, 첫 번째 요소는 담으려는 데이터 값, 두 번째 요소는 값을 바꾸는 함수
-            // modifier 함수는 함수를 이용해 데이터를 바꿨을 때 데이터도 바뀌고, 컴포넌트도 리렌더링된다.
             const [counter, setCounter] = React.useState(0);
             const onClick = () => {
-                setCounter(counter + 1);
+                // setCounter(counter + 1); 아래와 같은 역할을 하지만 아래가 더 안전하다.(버그에 있어서 안전함)
+                /*
+                setState(여기선 setCounter)의 인자값이 객체인지 함수인지 판별하는 부분이 있어서 
+                함수일 경우 저장되어 있는 값을 인자로 하여 리턴한 값을 최종적으로 업데이트 해준다.
+                */
+                setCounter((current) => current + 1);
             };
             return (
                 <div>
