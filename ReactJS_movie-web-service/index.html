@@ -8,24 +8,20 @@
     <script src="https://unpkg.com/@babel/standalone/babel.min.js"></script>
     <script type="text/babel">
         const root = document.getElementById('root');
-        let counter = 0;
-
-        function countUp() {
-            counter = counter + 1;
-            render();
-        }
-        function render() {
-            ReactDOM.render(<Container />, root);
-        }
-
-        const Container = () => {
+        function App() {
+            // React.useState()는 배열을 주는데, 첫 번째 요소는 담으려는 데이터 값, 두 번째 요소는 값을 바꾸는 함수
+            // modifier 함수는 함수를 이용해 데이터를 바꿨을 때 데이터도 바뀌고, 컴포넌트도 리렌더링된다.
+            const [counter, setCounter] = React.useState(0);
+            const onClick = () => {
+                setCounter(counter + 1);
+            };
             return (
                 <div>
                     <h3>Total clicks: {counter}</h3>
-                    <button onClick={countUp}>Click me</button>
+                    <button onClick={onClick}>Click me</button>
                 </div>
             );
-        };
-        render();
+        }
+        ReactDOM.render(<App />, root);
     </script>
 </html>
