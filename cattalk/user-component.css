@@ -47,14 +47,16 @@
 }
 
 .user-component__notice {
+    text-align: right;
+    align-items: center;
     display: flex;
     justify-content: center;
-    align-items: center;
     background-color: tomato;
-    width: 25px;
-    height: 25px;
+    margin-left: 30px;
+    margin-top: 5px;
+    width: 20px;
+    height: 20px;
     border-radius: 50%;
+    font-size: 14px;
     color: white;
-    font-weight: 400;
-    margin-top: 3px;
 }

@@ -1,3 +1,7 @@
+.bar {
+    padding: 10px 5px;
+}
+
 .friend-header {
     display: flex;
     justify-content: space-between;
@@ -28,7 +32,7 @@
 .img-sm {
     width: 45px;
     height: 45px;
-    border-radius: 18px;
+    border-radius: 25px;
     margin-right: 10px;
 }
 
@@ -80,11 +84,9 @@
     flex-direction: column;
     align-items: center;
 }
-.icon-row__icon span {
-    padding: 5px 10px;
-}
 
 .icon-row__icon img {
+    padding: 5px 10px;
     margin: 0px;
 }
 
@@ -100,4 +102,16 @@
 .friends-screen__friend .user-component {
     border-bottom: none;
     padding-bottom: 5px;
+}
+
+.friends::-webkit-scrollbar {
+    display: none;
+}
+
+.icon__notice {
+    width: 4px;
+    height: 4px;
+    border-radius: 50%;
+
+    background-color: tomato;
 }

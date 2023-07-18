@@ -1,182 +1,199 @@
 <!DOCTYPE html>
 <html lang="en">
+    <head>
+        <meta charset="UTF-8" />
+        <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+        <title>Log In</title>
+        <link rel="stylesheet" href="style.css" />
+    </head>
 
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Log In</title>
-    <link rel="stylesheet" href="style.css">
-</head>
-
-<body>
-
-    <div class="bar">
-        <div class="bar__column">
-            <span>20:00</span>
-        </div>
-        <div class="bar__column">
-            <i class="fas fa-wifi"></i>
-            70%
-            <i class="fas fa-battery-three-quarters"></i>
-        </div>
-    </div>
-
-    <header class="friend-header">
-        <div class="friend-header__column">
-            <span>친구</span>
-        </div>
-        <div class="friend-header__column">
-            <i class="fas fa-search fa-lg"></i>
-            <i class="fas fa-user-plus fa-lg"></i>
-            <i class="fas fa-music fa-lg"></i>
-            <i class="fas fa-cog fa-lg"></i>
-        </div>
-    </header>
-
-    <main class="friends-screen">
-        <div class="user-component">
-            <div class="user-component__column">
-                <img src="img/thumbsupcat.jpg" class="img-lg" />
-                <div class="user-component__name">
-                    <span class="user-component__text">따봉고양이</span>
-                    <!-- subtitle -->
-                </div>
+    <body class="friends">
+        <div class="bar">
+            <div class="bar__column">
+                <span>20:00</span>
             </div>
-            <div class="user-component__column">
-                <span class="user-component__right">상태메시지 올리기</span>
+            <div class="bar__column">
+                <i class="fas fa-wifi"></i>
+                70%
+                <i class="fas fa-battery-three-quarters"></i>
             </div>
         </div>
-        <div class="friends-screen__multi-profile">
-            <div class="friends-screen__multi-profile-header">
-                <span>내 멀티프로필</span>
-                <i class="fas fa-chevron-up"></i>
+
+        <header class="friend-header">
+            <div class="friend-header__column">
+                <span>친구</span>
             </div>
+            <div class="friend-header__column">
+                <i class="fas fa-search fa-lg"></i>
+                <i class="fas fa-user-plus fa-lg"></i>
+                <i class="fas fa-music fa-lg"></i>
+                <i class="fas fa-cog fa-lg"></i>
+            </div>
+        </header>
+
+        <main class="friends-screen">
             <div class="user-component">
                 <div class="user-component__column">
-                    <img src="img/plus.png" class="img-sm-border" />
-                    <div class="user-component__name">
-                        <span class="user-component__text">친구별로 다른 프로필을 설정해보세요!</span>
-                    </div>
-                </div>
-            </div>
-        </div>
-
-        <div class="friends-screen__birthday">
-            <div class="friends-screen__birthday-header">
-                <span>생일인 친구</span>
-                <i class="fas fa-chevron-up"></i>
-            </div>
-            <div class="user-component">
-                <div class="user-component__column">
-                    <img src="img/happycat.jpg" class="img-sm" />
-                    <div class="user-component__name">
-                        <span class="user-component__text">해피캣</span>
-                        <h6 class="user-component__subtext">어제 7월 13일</h6>
-                    </div>
-                </div>
-                <div class="user-component__column">
-                    <span class="user-component__right-gift">선물하기<i class="fas fa-hand-holding-heart"></i></span>
-                </div>
-            </div>
-        </div>
-
-        <div class="friends-screen__update">
-            <div class="friends-screen__update-header">
-                <span>업데이트한 친구 3</span>
-                <i class="fas fa-chevron-up"></i>
-            </div>
-            <div class="icon-row">
-                <div class="icon-row__icon">
-                    <img src="img/happycat.jpg" class="img-sm" />
-                    <span>해피캣</span>
-                </div>
-                <div class="icon-row__icon">
-                    <img src="img/thumbsupcat.jpg" class="img-sm" />
-                    <span>hapicat</span>
-                </div>
-                <div class="icon-row__icon">
-                    <img src="img/thumbsupcat.jpg" class="img-sm" />
-                    <span>hapicat</span>
-                </div>
-                <div class="icon-row__icon">
-                    <img src="img/thumbsupcat.jpg" class="img-sm" />
-                    <span>hapicat</span>
-                </div>
-            </div>
-        </div>
-
-        <div class="friends-screen__friend">
-            <div class="friends-screen__friend-header">
-                <span>친구 5</span>
-                <i class="fas fa-chevron-up"></i>
-            </div>
-
-            <div class="user-component">
-                <div class="user-component__column">
-                    <img src="img/thumbsupcat.jpg" class="img-sm" />
+                    <img src="img/thumbsupcat.jpg" class="img-lg" />
                     <div class="user-component__name">
                         <span class="user-component__text">따봉고양이</span>
-                        <h6 class="user-component__subtext">어제 7월 13일</h6>
+                        <!-- subtitle -->
                     </div>
                 </div>
                 <div class="user-component__column">
-                    <span class="user-component__music">Attention - NewJeans<i class="fas fa-caret-right"></i></span>
+                    <span class="user-component__right">상태메시지 올리기</span>
                 </div>
             </div>
-            <div class="user-component">
-                <div class="user-component__column">
-                    <img src="img/thumbsupcat.jpg" class="img-sm" />
-                    <div class="user-component__name">
-                        <span class="user-component__text">따봉고양이</span>
-                        <h6 class="user-component__subtext">어제 7월 13일</h6>
-                    </div>
+            <div class="friends-screen__multi-profile">
+                <div class="friends-screen__multi-profile-header">
+                    <span>내 멀티프로필</span>
+                    <i class="fas fa-chevron-up"></i>
                 </div>
-                <div class="user-component__column">
-                    <span class="user-component__music">Citrus - Kid Milli,dress<i
-                            class="fas fa-caret-right"></i></span>
+                <div class="user-component">
+                    <div class="user-component__column">
+                        <img src="img/plus.png" class="img-sm-border" />
+                        <div class="user-component__name">
+                            <span class="user-component__text"
+                                >친구별로 다른 프로필을 설정해보세요!</span
+                            >
+                        </div>
+                    </div>
                 </div>
             </div>
-            <div class="user-component">
-                <div class="user-component__column">
-                    <img src="img/thumbsupcat.jpg" class="img-sm" />
-                    <div class="user-component__name">
-                        <span class="user-component__text">따봉고양이</span>
-                        <h6 class="user-component__subtext">어제 7월 13일</h6>
+
+            <div class="friends-screen__birthday">
+                <div class="friends-screen__birthday-header">
+                    <span>생일인 친구</span>
+                    <i class="fas fa-chevron-up"></i>
+                </div>
+                <div class="user-component">
+                    <div class="user-component__column">
+                        <img src="img/happycat.jpg" class="img-sm" />
+                        <div class="user-component__name">
+                            <span class="user-component__text">해피캣</span>
+                            <h6 class="user-component__subtext">
+                                어제 7월 13일
+                            </h6>
+                        </div>
+                    </div>
+                    <div class="user-component__column">
+                        <span class="user-component__right-gift"
+                            >선물하기<i class="fas fa-hand-holding-heart"></i
+                        ></span>
                     </div>
                 </div>
-                <div class="user-component__column">
-                    <span class="user-component__music">NO PAIN - Silica gel<i class="fas fa-caret-right"></i></span>
+            </div>
+
+            <div class="friends-screen__update">
+                <div class="friends-screen__update-header">
+                    <span>업데이트한 친구 3</span>
+                    <i class="fas fa-chevron-up"></i>
+                </div>
+                <div class="icon-row">
+                    <div class="icon-row__icon">
+                        <div class="icon__notice"></div>
+                        <img src="img/happycat.jpg" class="img-sm" />
+                        <span>해피캣</span>
+                    </div>
+                    <div class="icon-row__icon">
+                        <div class="icon__notice"></div>
+                        <img src="img/popcat.jpg" class="img-sm" />
+                        <span>팝캣</span>
+                    </div>
+                </div>
+            </div>
+
+            <div class="friends-screen__friend">
+                <div class="friends-screen__friend-header">
+                    <span>친구 3</span>
+                    <i class="fas fa-chevron-up"></i>
+                </div>
+
+                <div class="user-component">
+                    <div class="user-component__column">
+                        <img src="img/bananacat.jpg" class="img-sm" />
+                        <div class="user-component__name">
+                            <span class="user-component__text">바나나캣</span>
+                            <h6 class="user-component__subtext">
+                                어제 7월 13일
+                            </h6>
+                        </div>
+                    </div>
+                    <div class="user-component__column">
+                        <span class="user-component__music"
+                            >Attention - NewJeans<i
+                                class="fas fa-caret-right"
+                            ></i
+                        ></span>
+                    </div>
+                </div>
+                <div class="user-component">
+                    <div class="user-component__column">
+                        <img src="img/applecat.jpg" class="img-sm" />
+                        <div class="user-component__name">
+                            <span class="user-component__text">애플캣</span>
+                            <h6 class="user-component__subtext">
+                                어제 7월 13일
+                            </h6>
+                        </div>
+                    </div>
+                    <div class="user-component__column">
+                        <span class="user-component__music"
+                            >Citrus - Kid Milli,dress<i
+                                class="fas fa-caret-right"
+                            ></i
+                        ></span>
+                    </div>
+                </div>
+                <div class="user-component">
+                    <div class="user-component__column">
+                        <img src="img/popcat.jpg" class="img-sm" />
+                        <div class="user-component__name">
+                            <span class="user-component__text">팝캣</span>
+                            <h6 class="user-component__subtext">
+                                어제 7월 13일
+                            </h6>
+                        </div>
+                    </div>
+                    <div class="user-component__column">
+                        <span class="user-component__music"
+                            >NO PAIN - Silica gel<i
+                                class="fas fa-caret-right"
+                            ></i
+                        ></span>
+                    </div>
+                </div>
+            </div>
+        </main>
+
+        <div class="nav">
+            <div class="nav__list">
+                <div class="nav__btn">
+                    <a href="friends.html">
+                        <i class="fas fa-user"></i>
+                    </a>
+                </div>
+                <div class="nav__btn">
+                    <a href="chats.html">
+                        <i class="far fa-comment"></i>
+                    </a>
+                </div>
+                <div class="nav__btn">
+                    <a href="openchat.html">
+                        <i class="far fa-comments"></i>
+                    </a>
+                </div>
+                <div class="nav__btn">
+                    <a href="more.html">
+                        <i class="fas fa-ellipsis-h fa-lg"></i>
+                    </a>
                 </div>
             </div>
         </div>
-    </main>
 
-    <div class="nav">
-        <div class="nav__list">
-            <div class="nav__btn">
-                <a href="friends.html">
-                    <i class="fas fa-user"></i>
-                </a>
-            </div>
-            <div class="nav__btn">
-                <a href="chats.html">
-                    <i class="far fa-comment"></i>
-                </a>
-            </div>
-            <div class="nav__btn">
-                <a href="openchat.html">
-                    <i class="far fa-comments"></i>
-                </a>
-            </div>
-            <div class="nav__btn">
-                <a href="more.html">
-                    <i class="fas fa-ellipsis-h fa-lg"></i>
-                </a>
-            </div>
-        </div>
-    </div>
-
-    <script src="https://kit.fontawesome.com/88e6dabee8.js" crossorigin="anonymous"></script>
-</body>
-
+        <script
+            src="https://kit.fontawesome.com/88e6dabee8.js"
+            crossorigin="anonymous"
+        ></script>
+    </body>
 </html>
