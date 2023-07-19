@@ -1,6 +1,6 @@
 .user-component {
     justify-content: space-between;
-    padding: 15px 0px;
+    padding: 15px 7px;
     border-bottom: 1px solid;
     border-color: var(--gray);
 }

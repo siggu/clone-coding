@@ -18,13 +18,13 @@
 .more-screen__column .try {
     display: flex;
     align-items: center;
-    background: tomato;
+    background: rgb(208, 240, 149);
     border-radius: 5px;
     width: 93%;
     height: 5px;
     font-size: 13px;
     margin: 0px auto;
-    margin-bottom: 15px;
+    /* margin-bottom: 15px; */
     padding: 15px;
 }
 
@@ -34,4 +34,15 @@
 
 .more-screen__list {
     padding: 10px;
+}
+
+.more-screen__list {
+    text-align: center;
+    position: relative;
+}
+
+.more-screen__list img {
+    width: 99%;
+    height: 250px;
+    text-align: center;
 }

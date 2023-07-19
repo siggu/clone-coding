@@ -1,3 +1,7 @@
+.friends {
+    padding-bottom: 50px;
+}
+
 .bar {
     padding: 10px 5px;
 }
@@ -32,7 +36,7 @@
 .img-sm {
     width: 45px;
     height: 45px;
-    border-radius: 25px;
+    border-radius: 20px;
     margin-right: 10px;
 }
 
@@ -75,7 +79,7 @@
     justify-content: flex-start;
     align-items: center;
     text-align: center;
-    margin-top: 15px;
+    margin-top: 10px;
     padding-bottom: 15px;
 }
 
@@ -83,11 +87,12 @@
     display: flex;
     flex-direction: column;
     align-items: center;
+    padding: 5px 10px;
 }
 
 .icon-row__icon img {
-    padding: 5px 10px;
     margin: 0px;
+    margin-bottom: 5px;
 }
 
 .icon-row {
@@ -109,9 +114,16 @@
 }
 
 .icon__notice {
-    width: 4px;
-    height: 4px;
-    border-radius: 50%;
-
+    text-align: right;
+    align-items: center;
+    display: flex;
+    justify-content: center;
     background-color: tomato;
+    margin-left: 45px;
+    margin-top: 5px;
+    width: 5px;
+    height: 5px;
+    border-radius: 50%;
+    font-size: 14px;
+    color: white;
 }
