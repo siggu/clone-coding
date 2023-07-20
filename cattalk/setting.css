@@ -12,10 +12,13 @@
 .fa-bell,
 .fa-sun,
 .fa-brush,
-.fa-comment,
 .fa-phone-alt,
 .fa-globe,
 .fa-bullhorn {
+    width: 38px;
+}
+
+.user-component__column .fa-comment {
     width: 38px;
 }
 

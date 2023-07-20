@@ -13,3 +13,7 @@
     display: flex;
     justify-content: space-between;
 }
+
+.nav__btn .fa-comment {
+    width: none;
+}
