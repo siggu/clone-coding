@@ -31,8 +31,11 @@
     padding-top: 15px;
     margin-left: 5px;
     font-size: 11px;
-    width: 100%;
     color: rgba(0, 0, 0, 0.5);
+}
+
+.chat__friend__text {
+    margin-bottom: 25px;
 }
 
 .user-component__name {
@@ -41,20 +44,10 @@
 }
 
 .chat__friend__send {
-    justify-content: flex-end;
-    right: 0;
+    left: 0;
     padding: 10px;
-    margin-top: 25px;
-    margin-right: 10px;
+    margin-right: 5px;
     border-radius: 13px;
     border-top-right-radius: 0px;
     background-color: yellow;
-}
-
-.chat__friend__send__time {
-    right: 100px;
-}
-
-.chat__friend__send .chat__friend__time {
-    flex-direction: row-reverse;
 }
