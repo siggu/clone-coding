@@ -1,53 +1,73 @@
-.chat-background {
-    background-color: #abc1d1;
+.main-chat {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding: 10px;
 }
 
-.img-sx {
-    width: 40px;
-    height: 40px;
+.chat__timestamp {
+    color: white;
+    background-color: rgba(0, 0, 0, 0.6);
+    padding: 7px 8px;
     border-radius: 15px;
-    margin-right: 10px;
+    font-size: 11px;
+    opacity: 0.9;
+}
+
+.chat-background {
+    background-color: #8fb9d8;
+}
+
+.chat__friend {
+    display: flex;
+    width: 100%;
+    margin-bottom: 5px;
 }
 
 .chat__friend__name {
-    font-size: 13px;
-    margin-top: 15px;
-    padding-bottom: 10px;
-    margin-bottom: 7px;
+    display: block;
+    margin-bottom: 8px;
 }
 
-.chat__friend__title {
-    border: 1px solid none;
-    border-radius: 13px;
-    padding: 8px 11px;
-    border-top-left-radius: 0px;
+.chat__friend img {
+    width: 50px;
+    height: 50px;
+    border-radius: 20px;
+    margin-right: 10px;
+}
+
+.chat__friend__info {
+    display: flex;
+    align-items: flex-end;
+}
+
+.chat__friend__bubble {
     background-color: white;
-    margin-bottom: 5px;
-    width: auto;
+    padding: 10px 13px;
+    border-radius: 15px;
+    border-top-left-radius: 0px;
+    margin-right: 5px;
+    font-size: 14px;
 }
 
 .chat__friend__time {
-    position: absolute;
-    padding-top: 15px;
-    margin-left: 5px;
-    font-size: 11px;
+    font-size: 14px;
     color: rgba(0, 0, 0, 0.5);
 }
 
-.chat__friend__text {
-    margin-bottom: 25px;
-}
-
-.user-component__name {
-    display: flex;
-    flex-direction: column;
-}
-
 .chat__friend__send {
-    left: 0;
-    padding: 10px;
-    margin-right: 5px;
-    border-radius: 13px;
+    justify-items: flex-end;
+}
+
+.chat__friend__send .chat__friend__bubble {
+    background-color: rgb(234, 248, 35);
+    border-top-left-radius: 15px;
     border-top-right-radius: 0px;
-    background-color: yellow;
+    margin-right: 0px;
+    margin-left: 5px;
+}
+
+.chat__friend__send .chat__friend__info {
+    flex-direction: row-reverse;
+    margin-left: auto;
 }
