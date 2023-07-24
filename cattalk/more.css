@@ -50,7 +50,7 @@
 
 .more-screen__list__photo {
     position: relative;
-    margin-bottom: 30px;
+    margin-bottom: 40px;
 }
 
 .more-screen__ad {
@@ -73,8 +73,8 @@
     border: 1px solid white;
     background-color: white;
     border-radius: 10px;
-    padding: 3px 5px;
-    font-size: 13px;
+    padding: 4px 6px;
+    font-size: 12px;
     color: rgba(0, 0, 0, 0.5);
 }
 
@@ -85,8 +85,8 @@
     border: 1px solid white;
     background-color: white;
     border-radius: 10px;
-    padding: 3px 5px;
-    font-size: 13px;
+    padding: 4px 6px;
+    font-size: 12px;
     color: rgba(0, 0, 0, 0.5);
 }
 
