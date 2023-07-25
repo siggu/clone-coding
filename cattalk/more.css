@@ -112,3 +112,16 @@
     padding-top: 7px;
     font-size: 12px;
 }
+
+@keyframes rotateCog {
+    from {
+        transform: none;
+    }
+    to {
+        transform: rotateZ(360deg);
+    }
+}
+
+.friend-header__column .fa-cog:hover {
+    transform: rotateCog 2s linear infinite;
+}

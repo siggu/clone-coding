@@ -127,3 +127,13 @@
     font-size: 14px;
     color: white;
 }
+
+@keyframes cogTransform {
+    from {
+        transform: rotateZ(360deg);
+    }
+}
+
+.friend-header__column .fa-cog:hover {
+    animation: cogTransform 2s linear infinite;
+}

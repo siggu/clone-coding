@@ -17,3 +17,34 @@
 .nav__btn .fa-comment {
     width: none;
 }
+
+.chat__notice {
+    background-color: tomato;
+    width: 17px;
+    height: 17px;
+    position: absolute;
+    color: white;
+    font-size: 15px;
+    border-radius: 50%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    top: 13px;
+    right: 300px;
+}
+
+@keyframes transformNotice {
+    0% {
+        transform: none;
+    }
+    50% {
+        transform: translateY(-3px);
+    }
+    100% {
+        transform: none;
+    }
+}
+
+.nav__btn .chat__notice {
+    animation: transformNotice 1.5s ease-in-out infinite;
+}
