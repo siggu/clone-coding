@@ -1,0 +1,134 @@
+.openchat-screen {
+    padding: 10px;
+}
+
+.openchat-screen__search {
+    border: 1px solid none;
+    border-radius: 5px;
+    background-color: rgba(0, 0, 0, 0.03);
+    padding: 10px;
+    margin-bottom: 15px;
+}
+
+.openchat-screen__search .fa-search {
+    padding-right: 5px;
+}
+
+.openchat-screen__search__title {
+    font-size: 13px;
+    color: rgba(0, 0, 0, 0.4);
+}
+
+.openchat-screen__search__list {
+    display: flex;
+    overflow-x: auto;
+    white-space: nowrap;
+    margin-bottom: 65px;
+}
+
+.openchat-screen__search__list::-webkit-scrollbar {
+    display: none;
+}
+
+.openchat-screen__search__btn {
+    border: 1px solid;
+    margin-right: 10px;
+    padding: 5px 8px;
+    border-radius: 20px;
+    font-size: 13px;
+}
+
+.openchat-screen__my-list {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin-bottom: 15px;
+    border-bottom: 10px solid rgba(0, 0, 0, 0.05);
+    padding-bottom: 60px;
+}
+
+.openchat-screen__my-list__text {
+    display: flex;
+    flex-direction: column;
+    margin-bottom: 35px;
+    align-items: center;
+}
+
+.openchat-screen__my-list__title {
+    font-weight: 600;
+    margin-bottom: 5px;
+}
+
+.openchat-screen__my-list__subtitle {
+    font-size: 11px;
+    color: rgba(0, 0, 0, 0.5);
+}
+
+.openchat-screen__my-list__btn {
+    border: 1px solid rgba(0, 0, 0, 0.5);
+    border-radius: 5px;
+    padding: 6px 12px;
+    font-size: 14px;
+}
+
+.openchat-screen__room {
+    border-bottom: 10px solid rgba(0, 0, 0, 0.05);
+}
+
+.openchat-screen__room__title {
+    padding-bottom: 15px;
+}
+
+.openchat-screen__room__ficture {
+    margin-left: 5px;
+}
+
+.openchat-screen__room__list {
+    display: flex;
+    overflow-x: auto;
+    white-space: nowrap;
+}
+
+.openchat-screen__room__list::-webkit-scrollbar {
+    display: none;
+}
+
+.openchat-screen__room__photo {
+    position: relative;
+    margin-right: 10px;
+    width: auto;
+    height: auto;
+}
+
+.openchat-screen__room__photo img {
+    width: 140px;
+    height: 200px;
+    border-radius: 10px;
+    margin-top: 15px;
+    opacity: 0.8;
+    margin-bottom: 15px;
+}
+
+.openchat-screen__room__text {
+    position: absolute;
+    top: 68%;
+    left: 10%;
+    right: 10%;
+    color: white;
+    font-weight: 600;
+    white-space: normal;
+    font-size: 14px;
+}
+
+.openchat-screen__room__subtext {
+    position: absolute;
+    top: 85%;
+    left: 10%;
+    color: rgb(245, 245, 245);
+    font-weight: 500;
+    font-size: 10px;
+}
+
+.fa-hotjar {
+    margin-right: 5px;
+}

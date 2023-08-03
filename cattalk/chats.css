@@ -1,0 +1,13 @@
+.chat-screen .user-component {
+    border-bottom: none;
+}
+
+.chat__friend {
+    padding: 10px;
+}
+
+.user-component__subtext img {
+    width: 25px;
+    margin-top: 3px;
+    margin-right: 7px;
+}

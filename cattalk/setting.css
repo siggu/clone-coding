@@ -1,0 +1,33 @@
+.setting__list .user-component {
+    border-bottom: none;
+}
+
+.setting__list .user-component-name {
+    padding: 200px;
+}
+
+.fa-user-shield,
+.fa-lock,
+.fa-users,
+.fa-bell,
+.fa-sun,
+.fa-brush,
+.fa-phone-alt,
+.fa-globe,
+.fa-bullhorn {
+    width: 38px;
+}
+
+.user-component__column .fa-comment {
+    width: 38px;
+}
+
+.setting__new {
+    background-color: tomato;
+    border-radius: 50%;
+    padding: 3px;
+    color: white;
+    font-size: 11px;
+    font-weight: 600;
+    margin-left: 5px;
+}

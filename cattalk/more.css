@@ -1,0 +1,127 @@
+.more-screen__wallet {
+    background-color: var(--gray);
+    margin-bottom: 10px;
+}
+
+.more-screen .user-component {
+    border-bottom: none;
+}
+
+.more-screen__column {
+    padding: 10px 20px;
+}
+
+.user-component__text {
+    font-size: 17px;
+}
+
+.more-screen__column .try {
+    display: flex;
+    align-items: center;
+    background: rgb(208, 240, 149);
+    border-radius: 5px;
+    width: 93%;
+    height: 5px;
+    font-size: 13px;
+    margin: 0px auto;
+    /* margin-bottom: 15px; */
+    padding: 15px;
+}
+
+.fa-money-bill-alt {
+    padding-right: 10px;
+}
+
+.more-screen__list {
+    padding: 10px;
+}
+
+.more-screen__list {
+    text-align: center;
+    position: relative;
+}
+
+.more-screen__list img {
+    width: 95%;
+    height: 220px;
+    text-align: center;
+    border-radius: 5px;
+}
+
+.more-screen__list__photo {
+    position: relative;
+    margin-bottom: 40px;
+}
+
+.more-screen__ad {
+    position: absolute;
+    top: 10px;
+    right: 20px;
+    border: 1px solid rgba(0, 0, 0, 0.5);
+    background-color: rgba(0, 0, 0, 0.2);
+    border-radius: 10px;
+    padding: 3px 5px;
+    font-size: 11px;
+    color: rgba(0, 0, 0, 0.6);
+    font-weight: 600;
+}
+
+.more-screen__list .more-screen__ad-text {
+    position: absolute;
+    bottom: 10px;
+    left: 20px;
+    border: 1px solid white;
+    background-color: white;
+    border-radius: 10px;
+    padding: 4px 6px;
+    font-size: 12px;
+    color: rgba(0, 0, 0, 0.5);
+}
+
+.more-screen__list .more-screen__ad-subtext {
+    position: absolute;
+    bottom: 10px;
+    right: 20px;
+    border: 1px solid white;
+    background-color: white;
+    border-radius: 10px;
+    padding: 4px 6px;
+    font-size: 12px;
+    color: rgba(0, 0, 0, 0.5);
+}
+
+.more-screen__btn {
+    display: flex;
+    justify-content: space-between;
+}
+
+.more-screen__btn__icon {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding: 10px 30px;
+}
+
+.more-screen__btn__icon i {
+    font-size: 25px;
+}
+
+.more-screen__btn__icon span {
+    margin-top: 20px;
+    margin-bottom: 20px;
+    padding-top: 7px;
+    font-size: 12px;
+}
+
+@keyframes rotateCog {
+    from {
+        transform: none;
+    }
+    to {
+        transform: rotateZ(360deg);
+    }
+}
+
+.friend-header__column .fa-cog:hover {
+    transform: rotateCog 2s linear infinite;
+}
