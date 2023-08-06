@@ -6,16 +6,14 @@ app.use(bodyParser.urlencoded({ extended: true }));
 const MongoClient = require('mongodb').MongoClient;
 var db;
 
+app.set('view engine', 'ejs');
+
 MongoClient.connect(
     'mongodb+srv://jeongmok:qwer1234@cluster0.v5rclej.mongodb.net/?retryWrites=true&w=majority',
     { useUnifiedTopology: true },
     function (에러, client) {
         if (에러) return console.log(에러);
         db = client.db('todoapp');
-
-        db.collection('post').insertOne({ 이름: 'john', _id: 100 }, function (에러, 결과) {
-            console.log('저장완료');
-        });
 
         app.listen(8080, function () {
             console.log('listening on 8080');
@@ -35,4 +33,17 @@ app.post('/add', function (요청, 응답) {
     응답.send('전송완료');
     console.log(요청.body.title);
     console.log(요청.body.date);
+
+    db.collection('post').insertOne({ 제목: 요청.body.title, 날짜: 요청.body.date }, function (에러, 결과) {
+        console.log('저장완료');
+    });
+});
+
+app.get('/list', function (요청, 응답) {
+    db.collection('post')
+        .find()
+        .toArray(function (에러, 결과) {
+            console.log(결과);
+            응답.render('list.ejs', { posts: 결과 });
+        });
 });
