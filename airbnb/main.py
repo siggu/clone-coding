@@ -1,23 +1,17 @@
-class Human:
+from typing import Any
+
+
+class Dog:
     def __init__(self, name):
-        print("human initialized")
         self.name = name
 
-    def say_hello(self):
-        print(f"hello my name is {self.name}")
+    def __str__(self):  # 원래 __str__ 메서드는 해당 클래스의 메모리 주소값을 반환하는데, 오버라이딩해서 쓸 수 있다.
+        return f"Dog: {self.name}"
+
+    def __getattribute__(self, name):
+        print(f"they want to get {name}")
+        return "😊"
 
 
-class Player(Human):
-    def __init__(self, name, xp):
-        super.__init__(name)
-        self.xp = xp
-
-
-class Fan(Human):
-    def __init__(self, name, fav_team):
-        super().__init__(name)
-        self.fav_team = fav_team
-
-
-nico = Fan("nico", "blue")
-nico.say_hello()
+jia = Dog("jia")
+print(jia.name)
